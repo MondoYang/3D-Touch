@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nFX-u0-nqS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--3DTouch测试-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cnD-q0-Cf1">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cnD-q0-Cf1" secondAttribute="bottom" id="2El-F6-FVU"/>
+                            <constraint firstItem="cnD-q0-Cf1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7CT-kw-HlW"/>
+                            <constraint firstAttribute="trailing" secondItem="cnD-q0-Cf1" secondAttribute="trailing" id="XBC-7m-xWt"/>
+                            <constraint firstItem="cnD-q0-Cf1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XND-0B-kqL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cnD-q0-Cf1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2El-F6-FVU"/>
+                                <exclude reference="7CT-kw-HlW"/>
+                                <exclude reference="XBC-7m-xWt"/>
+                                <exclude reference="XND-0B-kqL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="cnD-q0-Cf1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2El-F6-FVU"/>
+                                <include reference="7CT-kw-HlW"/>
+                                <include reference="XBC-7m-xWt"/>
+                                <include reference="XND-0B-kqL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="3DTouch测试" id="tOF-wT-3wb">
+                        <barButtonItem key="leftBarButtonItem" title="one" id="h3K-fq-3WF">
+                            <connections>
+                                <action selector="one:" destination="BYZ-38-t0r" id="h0m-A8-zpL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="two" id="hwg-WG-dEw">
+                            <connections>
+                                <action selector="two:" destination="BYZ-38-t0r" id="ngR-hd-IhY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="cnD-q0-Cf1" id="zMK-r6-6JI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736" y="415"/>
+        </scene>
+        <!--Show View Controller-->
+        <scene sceneID="On3-hO-Pd4">
+            <objects>
+                <viewController storyboardIdentifier="showViewController" id="PTV-n0-g7v" customClass="showViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1OA-Ru-xQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q3G-l4-sTU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GR6-rB-upv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1111" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-nl-98W">
+                                <rect key="frame" x="95" y="60" width="202" height="103"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="zTe-nl-98W" id="L59-Wc-FN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T7-MW-7Xw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kyE-Xf-Kex">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nFX-u0-nqS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fo6-xE-ENn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o0l-mn-2NH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoO-Bw-7M0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.5" y="415"/>
+        </scene>
+    </scenes>
+</document>
